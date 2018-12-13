@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> KEA FRONTER </title>
+    <link rel="stylesheet" href="excercise.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+    <form>
+       
+        <div id="login">
+           
+            <img src="images/flag.png" alt="danske" class="responsiveimage">
+            <a href="excercise.html"></a>
+            
+            <div class="imgcontainer">
+                <img src="images/logo.png">
+                <br>
+                <h1>fronter</h1>
+            </div>
+
+
+
+            <div class="container">
+                <input type="text" placeholder="Enter username" name="name" required>
+
+
+                <input type="password" placeholder="Enter password" name="psw" required>
+
+                <label id="rememberme">
+                    <br>
+                    <input type="checkbox" checked="checked" name="remember me"> remember me
+                </label>
+                <br>
+                
+               
+                 <a class="button" href="schedule.html">Log in</a>
+                
+                
+                
+            <button>SWITCH COLOURS</button>
+            
+            <script type="text/javascript">
+                
+                var color = ["#e5b9b9","#dec4db","#aaaaaa","rgb(128, 161, 181)","#e2d591","#b8d9c1","#cfd1e7",];
+                
+                var i = 0;
+                document.querySelector("button").addEventListener("click",function(){
+                    i = i < color.length ? ++i : 0;
+                    
+                     document.querySelector("body").style.background = color[i]
+                    
+                })    
+                </script>
+            </div>
+        </div>
+
+    </form>
+
+</body>
+
+</html>

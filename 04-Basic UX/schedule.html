@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<title>KEA HOMEPAGE </title>
+
+<link rel="stylesheet" href="excercise.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<img class="imgcontainer1" src="images/logo2.jpg" alt="logo">
+ <button>SWITCH COLOURS</button>
+            
+            <script type="text/javascript">
+                
+                var color = ["#efb5b5","#dec4db","#aaaaaa","rgb(128, 161, 181)","#e2d591","#b8d9c1","#cfd1e7",];
+                
+                var i = 0;
+                document.querySelector("button").addEventListener("click",function(){
+                    i = i < color.length ? ++i : 0;
+                    
+                     document.querySelector("body").style.background = color[i]
+                    
+                })    
+                </script>
+<body>
+
+     <header>
+            <div class="header">
+                <div class="nav">
+                    <label for="menu">&#9776;</label>
+                    
+                    <input type="checkbox" id="menu">
+                    <div class="menu">
+                       
+                        <a href="schedule.html">MMD INT 2018 </a>
+                        <br>
+                        <a href="messenger.html">CHAT</a>
+                        <br>
+                        <a href="chat.html">NEW message</a>
+                        <br>
+                        <a href="schedule.html">SEMESTERS</a>
+                        <br>
+                        <a href="schedule.html">SETTINGS</a>
+                        <br>
+                        <a href="excercise.html">Log out</a>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="wrapper">
+
+            <div class="schedule">
+                <h2> MONDAY 3.12.2018</h2>
+                <img src="images/schedule.png" alt="schedule" class="schedule">
+                <h3>
+                    Teachers: Gullan, Kenny<br>
+                    Todays uploads: present.doc.pdf, 04.02.01
+                </h3>
+                <br>
+            </div>
+
+            <div class="themes">
+                <h2>THEMES</h2>
+                <img src="images/folders.png" alt="folders" class="themes">
+            </div>
+
+           
+            <div class="footer">
+              
+               <a class="button2" href="messenger.html">
+
+		<img src="images/chat.svg" alt="chat">
+	</a>
+               
+                 <a class="button2" href="#">
+
+		<img src="images/notification.svg" alt="kea logo">
+	</a>
+              <a class="button2" href="#">
+
+		<img src="images/user.svg" alt="user">
+	</a>
+               
+                
+            </div>
+
+        </div>
+    
+</body>
+
+    
+</html>

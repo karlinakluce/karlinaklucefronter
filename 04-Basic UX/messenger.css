@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gainsboro;
+}
+
+.chatbox. {
+    width: 400px;
+    min-width: 390px;
+    height: 600px;
+    background: red;
+    padding: 25px;
+    margin: 10px auto;
+    box-shadow: 0 3px #ccc;
+}
+
+.chatlogs {
+    padding: 25px;
+    width: 100%;
+    height: 450px;
+    background: rgba(252, 252, 252, 0.81);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.chatlogs::-wezbkit-scrollbar {
+    width: 10px;
+}
+
+.chatlogs::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: rgba(0,0,0,.1);
+}
+
+
+.chat {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.chat .user-photo {
+    width: 50px;
+    height: 50px;
+    background:  #ccc;
+    border-radius: 90%;
+    overflow: hidden;
+}
+.chat .user-photo img{
+    width: 100%;
+}
+
+.chat .chat-message {
+    width: 80%;
+    padding: 15px;
+    margin: 5px 10px 0;
+    border-radius: 10px;
+    color:black;
+    font-size: 17px;
+}
+
+.friend .chat-message {
+    background: rgb(230, 200, 97);
+
+}
+
+.self .chat-message {
+    background: #e2e2e2;
+}
+
+.chat-form {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.chat-form textarea {
+    background: #fbfbfb;
+    width: 89%;
+    height: 70%;
+    border: 5px solid #eee;
+    resize: none;
+    padding: 50px;
+    font-size: 18px;
+    color: #333;
+    margin-left: 10px;
+}
+
+.chat-form textarea:focus {
+   background: #fff;
+}
+
+.chat-form textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-form textarea::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(0,0,0,.1);
+}
+
+.chat-form button {
+    background: #E5C662;
+    padding: 5px 15px;
+    font-size: 30px;
+    color: #fff;
+    border: none;
+    margin: 0 10px;
+    border-radius: 3px;
+    box-shadow: 0 3px 0 #dbbe62;
+    cursor: pointer;
+}
+
+.chat-form button:hover {
+    background: #bea146
+}
+
+
+ 
+h1{
+    font-family: 'Roboto';
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background: #c4ae68;
+    color: white
+}
+
+
+    
+
+ /*/// Burger menu ///*/
+
+
+a:visited {
+    color: #696969;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e3675e;
+    text-decoration: none;
+}
+
+nav {
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+
+#menu {
+    display: none;
+    text-decoration: none;
+
+}
+
+header {
+    color: #f0eeee;
+    background-color: rgb(186, 186, 186);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 28px;
+    font-family: 'Montserrat';
+    text-decoration: none;
+}
+
+
+
+label {
+    color: #4e4a4a;
+    font-size: 40px;
+    display: block;
+    cursor: pointer;
+}
+
+.menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+    margin-bottom: 1em;
+    
+}
+
+
+.menu a {
+    display: block;
+    border-bottom: 1px solid #868686;
+    margin: 0;
+    text-decoration: none;
+}
+
+#menu:checked + .menu {
+    display: block;
+
+}
+
+.checkbox {
+    display: none;
+}
+
+    
+  
